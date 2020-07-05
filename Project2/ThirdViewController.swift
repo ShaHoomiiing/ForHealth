@@ -22,7 +22,7 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
         
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         if let name = appDelegate.userName {
-            userName.text = name + "'s BMI"
+            userName.text = name + " 님의 BMI"
         }
     }
     

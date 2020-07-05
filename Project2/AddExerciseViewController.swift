@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class AddExerciseViewController: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
 
@@ -20,6 +21,11 @@ class AddExerciseViewController: UIViewController, UITextFieldDelegate, UIPicker
 
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return labelArray.count
+    }
+    
+    func getContext () -> NSManagedObjectContext {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        return appDelegate.persistentContainer.viewContext
     }
 
     @IBOutlet var exerciseName: UITextField!
@@ -36,7 +42,22 @@ class AddExerciseViewController: UIViewController, UITextFieldDelegate, UIPicker
     
     
     @IBAction func saveExercise(_ sender: Any) {
+        let context = self.getContext()
+        let entity = NSEntityDescription.entity(forEntityName: "Exercise", in: context)
         
+        let object = NSManagedObject(entity: entity!, insertInto: context)
+        
+        object.setValue(exerciseName.text, forKey: "exerciseName")
+        object.setValue(exercisePart, forKey: "exercisePart")
+        object.setValue(exerciseMethod.text, forKey: "exerciseMethod")
+        object.setValue(Date(), forKey: "exerciseDate")
+        
+        do{
+            try context.save()
+            print("saved!")
+        } catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
         
         self.dismiss(animated: true, completion: nil)
     }
