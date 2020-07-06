@@ -39,6 +39,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
     @IBAction func Reset(_ sender: Any) {
         curWater.text = "0"
         waterCount = 2000
+        self.waterTab.badgeValue = String(format: "%d", waterCount)
     }
     
     @IBAction func buttonLogout(_ sender: UIBarButtonItem) {
