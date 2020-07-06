@@ -21,8 +21,8 @@
 		823FF12A24B1E8D300DE2287 /* liquid.png in Resources */ = {isa = PBXBuildFile; fileRef = 823FF12824B1E8D300DE2287 /* liquid.png */; };
 		823FF12B24B1E8D300DE2287 /* workout.png in Resources */ = {isa = PBXBuildFile; fileRef = 823FF12924B1E8D300DE2287 /* workout.png */; };
 		823FF12D24B1EA6900DE2287 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FF12C24B1EA6900DE2287 /* ThirdViewController.swift */; };
-		823FF12F24B1EA9F00DE2287 /* ExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FF12E24B1EA9F00DE2287 /* ExerciseViewController.swift */; };
 		823FF13124B1EABA00DE2287 /* AddExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FF13024B1EABA00DE2287 /* AddExerciseViewController.swift */; };
+		823FF13324B32BE700DE2287 /* DetailExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 823FF13224B32BE700DE2287 /* DetailExerciseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,8 +42,8 @@
 		823FF12824B1E8D300DE2287 /* liquid.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = liquid.png; sourceTree = "<group>"; };
 		823FF12924B1E8D300DE2287 /* workout.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = workout.png; sourceTree = "<group>"; };
 		823FF12C24B1EA6900DE2287 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		823FF12E24B1EA9F00DE2287 /* ExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExerciseViewController.swift; sourceTree = "<group>"; };
 		823FF13024B1EABA00DE2287 /* AddExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExerciseViewController.swift; sourceTree = "<group>"; };
+		823FF13224B32BE700DE2287 /* DetailExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailExerciseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 				823FF11B24B0764800DE2287 /* ViewController.swift */,
 				823FF10424B0578400DE2287 /* FirstViewController.swift */,
 				823FF13024B1EABA00DE2287 /* AddExerciseViewController.swift */,
-				823FF12E24B1EA9F00DE2287 /* ExerciseViewController.swift */,
+				823FF13224B32BE700DE2287 /* DetailExerciseViewController.swift */,
 				823FF10624B0578400DE2287 /* SecondViewController.swift */,
 				823FF12C24B1EA6900DE2287 /* ThirdViewController.swift */,
 				823FF10824B0578400DE2287 /* Main.storyboard */,
@@ -185,10 +185,10 @@
 				823FF11C24B0764800DE2287 /* CreateViewController.swift in Sources */,
 				823FF10124B0578400DE2287 /* AppDelegate.swift in Sources */,
 				823FF11D24B0764800DE2287 /* LogoutViewController.swift in Sources */,
-				823FF12F24B1EA9F00DE2287 /* ExerciseViewController.swift in Sources */,
 				823FF10324B0578400DE2287 /* SceneDelegate.swift in Sources */,
 				823FF11E24B0764800DE2287 /* ViewController.swift in Sources */,
 				823FF10D24B0578400DE2287 /* Project2.xcdatamodeld in Sources */,
+				823FF13324B32BE700DE2287 /* DetailExerciseViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

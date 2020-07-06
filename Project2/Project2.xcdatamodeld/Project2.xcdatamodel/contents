@@ -2,11 +2,12 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="15702" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="Exercise" representedClassName="Exercise" syncable="YES" codeGenerationType="class">
         <attribute name="exerciseDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="exerciseImage" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES"/>
         <attribute name="exerciseMethod" optional="YES" attributeType="String"/>
         <attribute name="exerciseName" optional="YES" attributeType="String"/>
         <attribute name="exercisePart" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="103"/>
+        <element name="Exercise" positionX="-63" positionY="-18" width="128" height="118"/>
     </elements>
 </model>
